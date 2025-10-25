@@ -1,0 +1,113 @@
+.why {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-color: #1a1c1e;
+  color: white;
+  position: relative;
+  @media (max-width: 576px) {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+.why::after {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(0, 0, 0, 1);
+  background-image: url(/src/img/decorative-frame.png) no-repeat center / cover;
+  mask: url(/src/img/grid.png) no-repeat center / cover;
+  top: 5%;
+  right: 2%;
+  @media (max-width: 992px) {
+    top: 25%;
+  }
+}
+.why::before {
+  content: "";
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: rgba(0, 0, 0, 1);
+  background-image: url(/src/img/decorative-frame.png) no-repeat center / cover;
+  mask: url(/src/img/grid.png) no-repeat center / cover;
+  bottom: 5%;
+  left: 2%;
+}
+.why__subtitle {
+  @include title__white;
+  font-size: clamp(rem(20), 5vw, rem(35));
+  line-height: rem(25);
+}
+.why__subtitle::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 3px;
+  background-color: orange;
+  margin: 10px 0 10px 0;
+}
+.why__title {
+  font-size: clamp(rem(16), 5vw, rem(20));
+}
+
+.why__content {
+  line-height: 25px;
+  font-size: clamp(rem(15), 5vw, rem(18));
+  line-height: clamp(rem(23), 5vw, rem(25));
+}
+.why__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  column-gap: clamp(30px, 11vw, 200px);
+  row-gap: 80px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 70px 0 0 0;
+}
+.why__item {
+  background-color: #111315;
+  max-width: 500px;
+  border: 1px dashed;
+  box-shadow: 0 4px 15px rgba(239, 236, 236, 0.4);
+  border-radius: 30px;
+  padding: 15px 15px 15px 60px;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: all 0.5s ease !important;
+  transform-origin: center;
+}
+.why__item::before {
+  content: "";
+  position: absolute;
+  background-image: url(../img/check.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+}
+.why__item::after {
+  position: absolute;
+  content: attr(data-number);
+  font-size: 170px;
+  font-weight: 800;
+  color: rgba(239, 236, 236, 0.06);
+  top: 40%;
+  left: 80%;
+  z-index: -1;
+  pointer-events: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.why__item:hover {
+  color: black;
+  background-color: white;
+  box-shadow: 4px 4px 15px rgba(239, 236, 236, 0.4);
+}

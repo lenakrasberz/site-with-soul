@@ -1,0 +1,209 @@
+.footer {
+  background-color: #1a1c1e;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  color: white;
+  @media (max-width: 576px) {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+.container__footer {
+  display: flex;
+  align-items: start;
+  justify-content: space-around;
+  gap: 40px;
+  flex-wrap: wrap;
+  @media (max-width: 926px) {
+    justify-content: center;
+  }
+}
+.logo {
+  font-family: "Dancing";
+  text-decoration: none;
+  color: white;
+  margin-right: 35px;
+  font-size: rem(43);
+}
+.footer__left {
+  order: 1;
+  @media (max-width: 926px) {
+    order: 1;
+  }
+}
+.footer__offers {
+  order: 2;
+  @media (max-width: 926px) {
+    order: 3;
+  }
+}
+.footer__right {
+  order: 3;
+  @media (max-width: 926px) {
+    padding-right: 250px;
+  }
+  @media (max-width: 562px) {
+    padding-right: 0;
+  }
+}
+
+.footer__offers-title {
+  margin: 0;
+  font-size: clamp(rem(18), 5vw, rem(22));
+  margin-bottom: 55px;
+  @media (max-width: 562px) {
+    margin-bottom: 0;
+  }
+}
+.contacts__socials-box span {
+  font-size: rem(20);
+}
+.footer__policy {
+  max-width: 250px;
+  font-size: clamp(rem(14), 5vw, rem(18));
+  line-height: clamp(rem(23), 5vw, rem(25));
+}
+.footer__policy a {
+  color: gray;
+}
+.footer__socials-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-top: 70px;
+  margin-bottom: 30px;
+  max-width: 250px;
+  cursor: pointer;
+}
+.footer__list {
+  list-style: none;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  @media (max-width: 926px) {
+    padding-top: 30px;
+  }
+  @media (max-width: 562px) {
+    padding-top: 0;
+    margin-bottom: 0;
+    gap: 17px;
+  }
+}
+.footer__list a {
+  text-decoration: none;
+  color: white;
+}
+.contacts__number-footer {
+  color: white;
+  text-decoration: none;
+  font-size: clamp(rem(18), 5vw, rem(22));
+}
+.socials-box__brif {
+  padding-left: 15px;
+  margin-top: 30px;
+  @media (max-width: 562px) {
+    margin: 15px 0 15px 0;
+  }
+}
+.socials-box__link {
+  text-decoration: none;
+  color: white;
+}
+.footer__txt {
+  text-align: center;
+  margin: 40px 0 0 0;
+  font-size: rem(18);
+  color: grey;
+}
+.phone-box__footer {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 4px;
+  cursor: pointer;
+  @media (max-width: 562px) {
+    margin-bottom: 15px;
+  }
+}
+
+/* Псевдоэлемент для линии */
+.phone-box__footer::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: orange; /* можно поменять цвет линии */
+  transition: width 0.4s ease;
+}
+
+/* При наведении — линия плавно появляется */
+.phone-box__footer:hover::after {
+  width: 100%;
+}
+.contacts__email-footer {
+  position: relative;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.contacts__email-footer::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: orange;
+  transition: width 0.4s ease;
+}
+.contacts__email-footer:hover::after {
+  width: 100%;
+}
+.contacts__email-footer span {
+  font-size: clamp(rem(15), 5vw, rem(18));
+}
+.footer__link {
+  position: relative;
+  font-size: clamp(rem(15), 5vw, rem(18));
+}
+.footer__link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: orange;
+  transition: width 0.4s ease;
+}
+.footer__link:hover::after {
+  width: 100%;
+}
+
+.footer__socials-link {
+  position: relative;
+}
+.footer__socials-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 0;
+  height: 2px;
+  background-color: orange;
+  transition: width 0.4s ease;
+}
+.footer__socials-link:hover::after {
+  width: 100%;
+}
+.footer__doc-hover {
+  transition: all 0.3s ease;
+}
+.footer__doc-hover:hover {
+  color: orange;
+}

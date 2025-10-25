@@ -1,0 +1,64 @@
+@import "./pixtorem.scss";
+
+.offering {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.offering__wrapper {
+  display: flex;
+  justify-content: space-around;
+  gap: 55px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+.offering__title {
+  margin: 0;
+  position: relative;
+  padding-top: 35px;
+  text-transform: uppercase;
+  font-size: clamp(rem(18), 5vw, rem(27));
+  line-height: clamp(rem(10), 5vw, rem(30));
+
+  &::after {
+    content: "";
+    width: 244px;
+    height: 6px;
+    background-color: #c4c4c4;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+  }
+}
+.offering__sustitle {
+  margin: 0;
+  margin-bottom: 25px;
+  display: block;
+  font-size: clamp(rem(15), 5vw, rem(21));
+}
+.offering__text {
+  margin-bottom: 60px;
+  font-size: clamp(rem(14), 5vw, rem(18));
+}
+.offering__text--last {
+  margin-bottom: 0;
+}
+
+.offering__list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+.offering__item {
+  max-width: 655px;
+  border-top: 3px solid #c4c4c4;
+}
+.offering__number {
+  color: rgba(130, 130, 130, 1);
+  font-size: clamp(rem(60), 5vw, rem(90));
+  font-weight: 600;
+  text-transform: uppercase;
+  display: block;
+  margin: 45px 0 45px 0;
+}

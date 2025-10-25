@@ -1,0 +1,1866 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/scss/style.scss" />
+    <title>SiteWithSoul Agency</title>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__image-container">
+        <img src="/src/img/bg-1.jpg" alt="Image 1" class="hero__image" />
+        <img src="/src/img/bg-2.jpg" alt="Image 2" class="hero__image" />
+        <img src="/src/img/bg-3.jpg" alt="Image 4" class="hero__image" />
+      </div>
+      <div class="container hero__container">
+        <div class="burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="burger__menu">
+          <div class="burger__menu-close">
+            <img
+              class="menu-close"
+              src="/src/img/close-window.png"
+              alt="close"
+            />
+          </div>
+          <a href="#" class="logo-burger">SiteWithSoul</a>
+          <nav class="hero__nav-burger">
+            <ul class="hero__nav-list-burger">
+              <li class="hero__nav-item-burger">
+                <a href="#" class="hero__nav-link-burger">Главная</a>
+              </li>
+              <li class="hero__nav-item-burger">
+                <a href="#services" class="hero__nav-link-burger">Услуги</a>
+              </li>
+              <li class="hero__nav-item-burger">
+                <a href="#contacts" class="hero__nav-link-burger">Контакты</a>
+              </li>
+              <li class="hero__nav-item-burger">
+                <a href="#about" class="hero__nav-link-burger">О нас</a>
+              </li>
+              <li class="hero__nav-item-burger">
+                <a href="#portfolio" class="hero__nav-link-burger">Проекты</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="hero__socials-box-burger">
+            <a href="#">
+              <img
+                src="./src/img/instagram.png"
+                alt="instagram"
+                class="hero__socials-img-burger"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./src/img/linkedin.png"
+                alt="linkedin"
+                class="hero__socials-img-burger"
+              />
+            </a>
+            <a href="#">
+              <img
+                src="./src/img/telegram.png"
+                alt="telegram"
+                class="hero__socials-img-burger"
+              />
+            </a>
+            <!-- <a href="#">
+              <img
+                src="./src/img/behance2.png"
+                alt="behance"
+                class="hero__socials-img"
+              />
+            </a> -->
+          </div>
+        </div>
+
+        <div class="hero__wrapper">
+          <a href="#" class="logo">SiteWithSoul</a>
+          <nav class="hero__nav">
+            <ul class="hero__nav-list">
+              <li class="hero__nav-item">
+                <a href="#" class="hero__nav-link"></a>Главная
+              </li>
+              <li class="hero__nav-item">
+                <a href="#services" class="hero__nav-link">Услуги</a>
+              </li>
+              <li class="hero__nav-item">
+                <a href="#contacts" class="hero__nav-link">Контакты</a>
+              </li>
+              <li class="hero__nav-item">
+                <a href="#about" class="hero__nav-link">О нас</a>
+              </li>
+              <li class="hero__nav-item">
+                <a href="#portfolio" class="hero__nav-link">Проекты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="hero__phone-box">
+          <img
+            class="hero__phine-icon"
+            src="./src/img/telephone.png"
+            alt="telephone"
+            width="30"
+          />
+          <a class="hero__number" href="tel:+38990000000"
+            >+38 (099) 000-00-00</a
+          >
+        </div>
+        <div class="hero__socials-box">
+          <a href="#">
+            <img
+              src="./src/img/instagram.png"
+              alt="instagram"
+              class="hero__socials-img"
+              width="30"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./src/img/linkedin.png"
+              alt="linkedin"
+              class="hero__socials-img"
+              width="30"
+            />
+          </a>
+          <a href="#">
+            <img
+              src="./src/img/behance.png"
+              alt="behance"
+              class="hero__socials-img"
+              width="30"
+            />
+          </a>
+          <!-- <a href="#">
+            <img
+              src="./src/img/behance.svg"
+              alt="telegram"
+              class="hero__socials-img"
+              width="30"
+            />
+          </a> -->
+        </div>
+        <h1 class="hero__title">Сайт под ключ без лишних затрат</h1>
+        <p class="hero__subtitle">Создаем сайты, которые приносят клиентов</p>
+        <span class="hero__offer"
+          >Макеты под разные ниши, дизайн, который продаёт, современные анимации
+          и плавные эффекты — сайт оживает при каждом клике</span
+        >
+        <button class="hero__btn" id="open-modal">Обсудить проект</button>
+        <p class="hero__slogan">
+          SiteWithSoul Studio Вдохновляем бизнес быть онлайн
+        </p>
+
+        <div class="modal" id="modal">
+          <div class="modal__overlay" id="close-modal"></div>
+          <div class="modal__wrapper">
+            <div class="modal__box">
+              <div class="modal__calltoaction">Оставьте заявку</div>
+              <span class="logo">SiteWithSoul</span>
+            </div>
+            <div class="modal__content">
+              <button class="modal__close" id="closeBtn">&times;</button>
+              <h2 class="modal__title">Давайте обсудим проект</h2>
+              <form action="#" class="modal__form" method="post">
+                <div class="form__field">
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="name"
+                    placeholder="Как можно к вам обращаться?"
+                  />
+                </div>
+                <div class="form__field">
+                  <input
+                    type="email"
+                    class="form__input"
+                    id="email"
+                    placeholder="Оставьте свой email"
+                  />
+                </div>
+                <div class="form__field">
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="phone"
+                    placeholder="Оставьте свой номер телефона"
+                  />
+                </div>
+                <div class="form__field">
+                  <textarea
+                    class="form__message"
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Опишите какой сайт вам нужен?"
+                  ></textarea>
+                </div>
+                <button type="submit" class="form__btn">Отправить</button>
+                <!-- <button class="btn">Button</button> -->
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="offering">
+        <div class="container">
+          <div class="offering__wrapper">
+            <h2 class="offering__title">Что мы предлагаем</h2>
+            <ul class="offering__list">
+              <li
+                class="offering__item"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <span class="offering__number">01</span>
+                <h3 class="offering__sustitle">
+                  Сайт по готовым макетам — дизайн бесплатно
+                </h3>
+                <div class="offering__text">
+                  У нас собрана большая коллекция проверенных решений под разные
+                  ниши — «Библиотека готовых макетов». Вы можете выбрать
+                  понравившийся вариант или собрать сайт из отдельных секций. Мы
+                  адаптируем его под ваш бренд: цвета, шрифты, фотографии,
+                  контент. Это быстрый и бюджетный способ запустить проект без
+                  потери качества.
+                </div>
+              </li>
+              <li
+                class="offering__item"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <span class="offering__number">02</span>
+                <h3 class="offering__subtitle">Сайт по вашему дизайну</h3>
+                <div class="offering__text">
+                  Уже есть макет ? Мы аккуратно перенесём его в рабочий сайт,
+                  сохраняя все задумки дизайнера. Работаем строго по вашему ТЗ,
+                  чтобы результат полностью совпадал с ожиданиями.
+                </div>
+              </li>
+              <li
+                class="offering__item"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+              >
+                <span class="offering__number">03</span>
+                <h3 class="offering__subtitle">
+                  Сайт с индивидуальным дизайном — от 300 $
+                </h3>
+                <div class="offering__text offering__text--last">
+                  Нужен уникальный стиль? Поработаем с нашим дизайнером и
+                  создадим сайт с нуля. эксклюзивный визуал, уникальный стиль и
+                  продуманная структура под ваш бизнес. Такой проект подчеркнёт
+                  индивидуальность бренда и выделит вас среди конкурентов.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="sidebar" id="landing">
+          <a href="#services" class="close__btn">&times;</a>
+          <ul class="landing_list">
+            <h3 class="landing__title">
+              Полный пакет для уверенного старта онлайн
+            </h3>
+            <li class="landing_item">
+              Индивидуальный дизайн — выбираем готовый макет, работаем по вашему
+              макету или создаём эксклюзивное решение с дизайнером ;
+            </li>
+            <li class="landing_item">Базовое лого (по вашему запросу);</li>
+            <li class="landing_item">
+              Наполнение сайта вашим контентом. Если текста нет — мы подготовим
+              его за дополнительную плату;
+            </li>
+            <li class="landing_item">
+              Анимации, эффекты, параллакс — ваш сайт будет «живым» и
+              динамичным;
+            </li>
+            <li class="landing_item">
+              Интеграция с CMS WordPress (по желанию, выполняется за отдельную
+              плату);
+            </li>
+            <li class="landing_item">
+              Адаптация под все мобильные устройства;
+            </li>
+            <li class="landing_item">Подключение хостинга и домена;</li>
+            <li class="landing_item">
+              Отправка заявок в Telegram (услуга по запросу, оплачивается
+              отдельно);
+            </li>
+            <li class="landing_item">
+              Бонус: бесплатная настройка тестовой Google-рекламы на небольшой
+              бюджет — по вашему желанию.
+            </li>
+          </ul>
+          <button type="submit" class="form__btn-order" id="open__modal-order">
+            ЗАКАЗАТЬ
+          </button>
+        </div>
+        <div class="container container__services">
+          <h2 class="services__title">Наши услуги</h2>
+          <p class="services__content">
+            Мы создаём сайты под разные задачи бизнеса и берём на себя полный
+            цикл: от дизайна до запуска и первых клиентов
+          </p>
+
+          <ul class="services__list">
+            <li
+              class="services__item"
+              data-aos="zoom-out-right"
+              data-aos-duration="1000"
+            >
+              <img
+                src="./src/img/landing-pages.png"
+                width="40"
+                height="40"
+                alt="icon"
+                class="services__img"
+              />
+              <h3 class="services__subtitle">Лендинг</h3>
+              <p class="services__text">
+                идеален для презентации одного продукта или услуги
+              </p>
+              <div class="services__price"><span>Цена: от</span> 500$</div>
+              <a href="#landing" class="services__link"
+                >Что включено в стоимость</a
+              >
+            </li>
+
+            <li class="services__item">
+              <img
+                src="./src/img/visiting-card.png"
+                width="40"
+                height="40"
+                alt="icon"
+                class="services__img"
+              />
+              <h3 class="services__subtitle">Сайт-визитка</h3>
+              <p class="services__text">
+                компактное решение для личного бренда или малого бизнеса
+              </p>
+              <div class="services__price"><span>Цена: от</span> 500$</div>
+              <a href="#landing" class="services__link"
+                >Что включено в стоимость</a
+              >
+            </li>
+
+            <li
+              class="services__item"
+              data-aos="zoom-out-left"
+              data-aos-duration="1000"
+            >
+              <img
+                src="./src/img/web.png"
+                width="40"
+                height="40"
+                alt="icon"
+                class="services__img"
+              />
+              <h3 class="services__subtitle">Многостраничный сайт</h3>
+              <p class="services__text">
+                расширенный вариант с подробными разделами, подходит для
+                компаний.
+              </p>
+              <div class="services__price"><span>Цена: от</span> 800$</div>
+              <a href="#landing" class="services__link"
+                >Что включено в стоимость</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="modal-order" id="modal-order">
+          <div class="modal__overlay-order" id="close-modal"></div>
+          <div class="modal__wrapper">
+            <div class="modal__content">
+              <button class="modal__close" id="closeOrderBtn">&times;</button>
+              <h2 class="modal__title modal__title-order">Заказать сайт</h2>
+              <form action="#" class="modal__form" method="post">
+                <div class="form__field">
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="name"
+                    placeholder="Как можно к вам обращаться?"
+                  />
+                </div>
+
+                <div class="form__field">
+                  <input
+                    type="email"
+                    class="form__input"
+                    id="email"
+                    placeholder="Оставьте свой email"
+                  />
+                </div>
+                <div class="form__field">
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="phone"
+                    placeholder="Оставьте свой номер телефона"
+                  />
+                </div>
+                <div class="form__field form__field-decor">
+                  <select
+                    id="website"
+                    name="website"
+                    class="form__input form__input-decor"
+                  >
+                    <option value="">--Выберите нужный сайт--</option>
+                    <option value="landing">Лендинг</option>
+                    <option value="visitka">Сайт-визитка</option>
+                    <option value="pages">Многостраничник</option>
+                  </select>
+                </div>
+                <div class="form__field">
+                  <textarea
+                    class="form__message"
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Оставте сообщение"
+                  ></textarea>
+                </div>
+                <button type="submit" class="form__btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stack">
+        <div class="container">
+          <h2 class="stack__title">Технологии, с которыми мы работаем</h2>
+
+          <p class="stack__subtitle">
+            Мы используем как проверенные временем технологии, так и современные
+            инструменты
+          </p>
+          <ul class="stack__list">
+            <li class="stack__item">
+              <h3 class="stack__name">01. Frontend</h3>
+              <h4 class="stack__technologies">
+                Технологии: HTML5, CSS3, SCSS, JavaScript
+              </h4>
+              <p class="stack__description">
+                Сайт работает быстро и корректно на любых устройствах. Чистая и
+                современная верстка, которая легко адаптируется под мобильные и
+                планшеты.
+              </p>
+            </li>
+
+            <li class="stack__item">
+              <h3 class="stack__name">02. CMS и Backend</h3>
+              <h4 class="stack__technologies">Технологии: PHP, WordPress</h4>
+              <p class="stack__description">
+                Возможность самостоятельно редактировать текст, фото и цены без
+                программиста. Всё под вашим контролем через удобную
+                админ-панель.
+              </p>
+            </li>
+            <li class="stack__item">
+              <h3 class="stack__name">03. Анимации</h3>
+              <h4 class="stack__technologies">Технологии: GSAP, AnimXYZ</h4>
+              <p class="stack__description">
+                Анимации делают сайт современным и запоминающимся. Посетители с
+                удовольствием с ним взаимодействуют, остаются дольше и чаще
+                возвращаются.
+              </p>
+            </li>
+            <li class="stack__item">
+              <h3 class="stack__name">04. Инструменты разработки</h3>
+              <h4 class="stack__technologies">Технологии: Vite</h4>
+              <p class="stack__description">
+                Сайт загружается максимально быстро, что важно для клиентов и
+                Google. Код чистый и оптимизированный.
+              </p>
+            </li>
+          </ul>
+          <div class="stack__wrapper">
+            <ul class="stack__tools-list">
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/animxyz.png"
+                  alt="animxyz"
+                  class="stack__item-img"
+                  width="90"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/css-3.png"
+                  alt="css"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/greensock-gsap.png"
+                  alt="greensock"
+                  class="stack__item-img"
+                  width="110"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/html5.png"
+                  alt="html5"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/java-script.png"
+                  alt="java-script"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/php.png"
+                  alt="php"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/sass.png"
+                  alt="sass"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/wordpress.png"
+                  alt="wordpress"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+            </ul>
+            <ul class="stack__tools-list">
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/animxyz.png"
+                  alt="animxyz"
+                  class="stack__item-img"
+                  width="90"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/css-3.png"
+                  alt="css"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/greensock-gsap.png"
+                  alt="greensock"
+                  class="stack__item-img"
+                  width="110"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/html5.png"
+                  alt="html5"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/java-script.png"
+                  alt="java-script"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/php.png"
+                  alt="php"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/sass.png"
+                  alt="sass"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+              <li class="stack__item-image">
+                <img
+                  src="./src/img/wordpress.png"
+                  alt="wordpress"
+                  class="stack__item-img"
+                  width="100"
+                />
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="payments">
+        <div class="container">
+          <h2 class="payments__title">Условия работы и оплата</h2>
+          <p class="payments__text">
+            Мы ценим прозрачность и удобство для наших клиентов, поэтому
+            предлагаем простые и понятные условия работы
+          </p>
+          <div class="payments__wrapper">
+            <div
+              class="payments__img"
+              data-aos="fade-right"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <img
+                class="payments__photo"
+                src="./src/img/payments.jpg"
+                alt="payments"
+                width="800"
+              />
+            </div>
+            <div
+              class="payments__inner"
+              data-aos="fade-left"
+              data-aos-offset="300"
+              data-aos-easing="ease-in-sine"
+            >
+              <ul class="payments__list-group">
+                <li class="list-group-item" data-tab="tab-1">
+                  Для заказчиков из Украины:
+                </li>
+                <li class="list-group-item" data-tab="tab-2">
+                  Для зарубежных заказчиков:
+                </li>
+              </ul>
+
+              <div class="payments__local" data-tab-content id="tab-1">
+                <ul class="payments__local-list">
+                  <h4 class="payments__for-local">
+                    Мы ценим доверие в сотрудничестве, поэтому оплата и условия
+                    работы максимально простые и понятные:
+                  </h4>
+                  <li class="payments__item">
+                    Предоплата 50% <br />Фиксирует за вами время в графике и
+                    гарантирует начало работы в согласованные сроки;
+                  </li>
+                  <li class="payments__item">
+                    Оставшиеся 50% <br />Tолько после сдачи проекта. Вы
+                    оплачиваете финальную часть только тогда, когда получаете
+                    готовый результат, соответствующий договорённостям;
+                  </li>
+                  <li class="payments__item">
+                    Оплата через карту украинского банка. Для заказчиков из
+                    Украины — это быстрый и удобный способ без лишних комиссий.
+                  </li>
+                  <li class="payments__item">
+                    Все этапы и условия фиксируются заранее — никаких скрытых
+                    платежей или «сюрпризов» в процессе.
+                  </li>
+                </ul>
+              </div>
+
+              <div
+                class="payments__foreigners hidden"
+                data-tab-content
+                id="tab-2"
+              >
+                <ul class="payments__local-list">
+                  <h4 class="payments__description">
+                    Для международных проектов мы используем сервис
+                    <span>Escrow.com</span>
+                  </h4>
+                  <p class="payments__subtitle">
+                    Почему <span>Escrow.com </span>удобен и выгоден?
+                  </p>
+
+                  <li class="payments__item">
+                    Безопасность для обеих сторон. Деньги резервируются на счёте
+                    сервиса и переводятся исполнителю только после того, как
+                    заказчик подтверждает выполнение работы. Таким образом, у
+                    заказчика есть гарантия, что средства не пропадут, а у
+                    исполнителя — что оплата действительно поступит;
+                  </li>
+                  <li class="payments__item">
+                    Комиссия ниже, чем у Upwork и Fiverr. На Escrow.com комиссия
+                    фиксирована и обычно составляет около 3–3,25%, что делает
+                    сотрудничество более выгодным;
+                  </li>
+                  <li class="payments__item">
+                    Escrow.com работает с международными платежами и
+                    поддерживает разные валюты;
+                  </li>
+                  <li class="payments__item">
+                    В результате вы платите меньше, и получаете более
+                    конкурентную стоимость услуг.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="steps">
+        <div class="container">
+          <h2 class="steps__title">Этапы работы</h2>
+          <p class="steps__subtitle">От идеи до запуска: прозрачный процесс</p>
+          <div class="custom-progressbar">
+            <div class="custom-progressbar-fill"></div>
+          </div>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img
+                  class="swiper__img"
+                  src="./src/img/target.png"
+                  width="60"
+                />
+                <h2 class="swiper__number">01</h2>
+                <h3 class="swiper__title">Определение целей</h3>
+                <p class="swiper__content">
+                  Заполняем короткий бриф, чтобы понять задачи бизнеса, целевую
+                  аудиторию и ожидания от сайта
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper__img" src="./src/img/audit.png" width="60" />
+                <h2 class="swiper__number">02</h2>
+                <h3 class="swiper__title">Анализ</h3>
+                <p class="swiper__content">
+                  Изучаем конкурентов и специфику ниши, чтобы создать сайт,
+                  который выделяется и работает на результат
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper__img"
+                  src="./src/img/layout.png"
+                  width="60"
+                />
+                <h2 class="swiper__number">03</h2>
+                <h3 class="swiper__title">Выбор дизайна</h3>
+                <p class="swiper__content">
+                  Предлагаем варианты: уникальный макет, адаптация готового
+                  решения или использование вашего дизайна
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper__img"
+                  src="./src/img/designer.png"
+                  width="60"
+                />
+                <h2 class="swiper__number">04</h2>
+                <h3 class="swiper__title">Верстка сайта (Front-End)</h3>
+                <p class="swiper__content">
+                  Адаптивная верстка, кроссбраузерность, оптимизация под
+                  мобильные устройства, валидация по стандартам W3C, высокая
+                  скорость загрузки (PageSpeed Insights). Также наполняем сайт
+                  контентом.
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper__img" src="./src/img/cms.png" width="60" />
+                <h2 class="swiper__number">05</h2>
+                <h3 class="swiper__title">
+                  Интеграция с CMS<br />
+                  WordPress (Back-End)
+                </h3>
+                <p class="swiper__content">
+                  Подключение удобной админ-панели для самостоятельного
+                  управления сайтом (услуга опциональная)
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img class="swiper__img" src="./src/img/host.png" width="60" />
+                <h2 class="swiper__number">06</h2>
+                <h3 class="swiper__title">Размещение на хостинге</h3>
+                <p class="swiper__content">
+                  Настройка хостинга, перенос проекта, регистрация домена и
+                  запуск сайта в сеть
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper__img"
+                  src="./src/img/adwords.png"
+                  width="60"
+                />
+                <h2 class="swiper__number">07</h2>
+                <h3 class="swiper__title">
+                  Настройка Google Рекламы (по желанию)
+                </h3>
+                <p class="swiper__content">
+                  Запуск тестовой кампании для первых клиентов (по желанию)
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper__img"
+                  src="./src/img/password.png"
+                  width="60"
+                />
+                <h2 class="swiper__number">08</h2>
+                <h3 class="swiper__title">Передача доступа</h3>
+                <p class="swiper__content">
+                  После завершения проекта вы получаете все пароли и инструкции
+                  для полного контроля над сайтом
+                </p>
+              </div>
+              <div class="swiper-slide">
+                <img
+                  class="swiper__img"
+                  src="./src/img/support.png"
+                  width="60"
+                />
+                <h2 class="swiper__number">09</h2>
+                <h3 class="swiper__title">Поддержка</h3>
+                <p class="swiper__content">
+                  Остаёмся на связи: консультации, советы и помощь при
+                  необходимости
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container__arrow">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="map">
+        <div class="container">
+          <h2 class="map__title">География клиентов: работаем без границ</h2>
+          <p class="map__subtitle">
+            Мы создаем проекты для клиентов по всему миру. Независимо от вашего
+            региона, обеспечим понятную коммуникацию и надежный результат
+          </p>
+          <div class="map__wrapper">
+            <div class="map__img">
+              <img src="./src/img/map.png" alt="" class="map__img-bg" />
+            </div>
+            <div class="map__inner">
+              <h4
+                class="map__current"
+                data-aos="fade-up"
+                data-aos-duration="1000"
+                data-aos-delay="0"
+              >
+                Текущее местоположение
+              </h4>
+              <ul class="map__list">
+                <li
+                  class="map__item"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="200"
+                >
+                  Украина и Восточная Европа;
+                </li>
+                <li
+                  class="map__item"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="400"
+                >
+                  🇺🇸 США и Канада;
+                </li>
+                <li
+                  class="map__item"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="600"
+                >
+                  🇪🇺 Европа (Германия, Франция, Великобритания);
+                </li>
+                <li
+                  class="map__item"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="800"
+                >
+                  🇦🇺 Австралия и Новая Зеландия;
+                </li>
+                <li
+                  class="map__item"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
+                  data-aos-delay="1000"
+                >
+                  Юго-Восточная Азия (Сингапур, Таиланд, Вьетнам, Индонезия,
+                  Малайзия)
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div class="container">
+          <h2 class="portfolio__title">Портфолио</h2>
+          <p class="portfolio__subt">Наши некоторые работы</p>
+          <ul class="portfolio__list">
+            <li class="portfolio__wrap">
+              <div class="portfolio__card">
+                <div class="portfolio__front">
+                  <img
+                    src="./src/img/portfolio-1.png"
+                    alt="portfolio"
+                    class="portfolio__img"
+                  />
+                </div>
+                <div class="portfolio__back">
+                  <h3 class="portfolio__subtitle">
+                    Салон красоты beauty-clinic
+                  </h3>
+                  <p class="portfolio__task">
+                    <strong>Задача:</strong> <br />
+                    Создать современный сайт салона красоты для привлечения
+                    новых клиентов и презентации услуг салона
+                  </p>
+                  <div class="portfolio__decision">
+                    <strong>Решение:</strong> <br />
+                  </div>
+                  <ul class="portfolio__task-list">
+                    <li class="portfolio__task-item">
+                      Адаптивная верстка под все устройства;
+                    </li>
+                    <li class="portfolio__task-item">
+                      Услуги мастеров, выполнены с эффектом параллакса;
+                    </li>
+                    <li class="portfolio__task-item">
+                      SEO-оптимизированная структура.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a
+                class="form__btn btn__link"
+                href="https://beauty-clinic.if.ua"
+                target="_blank"
+                >Перейти на сайт</a
+              >
+            </li>
+            <li class="portfolio__wrap">
+              <div class="portfolio__card">
+                <div class="portfolio__front">
+                  <img
+                    src="./src/img/portfolio-2.png"
+                    alt="portfolio"
+                    class="portfolio__img"
+                  />
+                </div>
+                <div class="portfolio__back">
+                  <h3 class="portfolio__subtitle">Сайт аренды фотостудии</h3>
+                  <p class="portfolio__task">
+                    <strong>Задача:</strong> <br />Разработать стильный и
+                    удобный сайт для аренды фотостудии, где клиенты смогут легко
+                    ознакомиться с залами и тарифами
+                  </p>
+                  <div class="portfolio__decision">
+                    <strong>Решение:</strong> <br />
+                  </div>
+                  <ul class="portfolio__task-list">
+                    <li class="portfolio__task-item">
+                      Интерактивная галерея залов;
+                    </li>
+                    <li class="portfolio__task-item">
+                      Анимации при прокрутке для живого эффекта;
+                    </li>
+                    <li class="portfolio__task-item">Адаптивная верстка</li>
+                  </ul>
+                </div>
+              </div>
+              <a
+                class="form__btn btn__link"
+                href="https://artstudiopassage.com/"
+                target="_blank"
+                >Перейти на сайт</a
+              >
+            </li>
+            <li class="portfolio__wrap">
+              <div class="portfolio__card">
+                <div class="portfolio__front">
+                  <img
+                    src="./src/img/portfolio-3.png"
+                    alt="portfolio"
+                    class="portfolio__img"
+                  />
+                </div>
+                <div class="portfolio__back">
+                  <h3 class="portfolio__subtitle">Сайт фотографа на Пхукете</h3>
+                  <p class="portfolio__task">
+                    <strong>Задача:</strong> <br />Создать персональный
+                    сайт-портфолио для фотографа на Пхукете, где клиенты смогут
+                    ознакомиться с работами и легко связаться для бронирования
+                    фотосессии
+                  </p>
+                  <div class="portfolio__decision">
+                    <strong>Решение:</strong> <br />
+                  </div>
+                  <ul class="portfolio__task-list">
+                    <li class="portfolio__task-item">
+                      Галерея с примерами фотосессий;
+                    </li>
+                    <li class="portfolio__task-item">
+                      Раздел FAQ с подробным описанием услуг;
+                    </li>
+                    <li class="portfolio__task-item">
+                      Интеграция формы обратной связи
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a
+                class="form__btn btn__link"
+                href="https://phuketphotography.com/"
+                target="_blank"
+                >Перейти на сайт</a
+              >
+            </li>
+            <li class="portfolio__wrap">
+              <div class="portfolio__card">
+                <div class="portfolio__front">
+                  <img
+                    src="./src/img/portfolio-4.png"
+                    alt="portfolio"
+                    class="portfolio__img"
+                  />
+                </div>
+                <div class="portfolio__back">
+                  <h3 class="portfolio__subtitle">Спортивный зал в Паттайе</h3>
+                  <p class="portfolio__task">
+                    <strong>Задача:</strong> <br />Создать современный сайт для
+                    спортивного зала в Паттайе с акцентом на тайскую борьбу
+                  </p>
+                  <div class="portfolio__decision">
+                    <strong>Решение:</strong> <br />
+                  </div>
+                  <ul class="portfolio__task-list">
+                    <li class="portfolio__task-item">
+                      Блок с тренерским составом;
+                    </li>
+                    <li class="portfolio__task-item">
+                      Раздел с направлениями;
+                    </li>
+                    <li class="portfolio__task-item">
+                      Онлайн-расписание и форма записи на тренировки
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a
+                class="form__btn btn__link"
+                href="https://battleconquerpattaya.com/"
+                target="_blank"
+                >Перейти на сайт</a
+              >
+            </li>
+            <li class="portfolio__wrap">
+              <div class="portfolio__card">
+                <div class="portfolio__front">
+                  <img
+                    src="./src/img/portfolio-5.png"
+                    alt="portfolio"
+                    class="portfolio__img"
+                  />
+                </div>
+                <div class="portfolio__back">
+                  <h3 class="portfolio__subtitle">Медиа-компания на Пхукете</h3>
+                  <p class="portfolio__task">
+                    <strong>Задача:</strong> <br />Создать корпоративный сайт
+                    для медиа-компании на Пхукете, которая занимается
+                    маркетингом и продвижением бизнеса в регионе
+                  </p>
+                  <div class="portfolio__decision">
+                    <strong>Решение:</strong> <br />
+                  </div>
+                  <ul class="portfolio__task-list">
+                    <li class="portfolio__task-item">Раздел с услугами;</li>
+                    <li class="portfolio__task-item">
+                      Портфолио с кейсами и примерами работ;
+                    </li>
+                    <li class="portfolio__task-item">Форма обратной связи</li>
+                  </ul>
+                </div>
+              </div>
+              <a
+                class="form__btn btn__link"
+                href="https://phuketmediacompany.com/"
+                target="_blank"
+                >Перейти на сайт</a
+              >
+            </li>
+
+            <li class="portfolio__wrap">
+              <div class="portfolio__card">
+                <div class="portfolio__front">
+                  <img
+                    src="./src/img/portfolio-6.png"
+                    alt="portfolio"
+                    class="portfolio__img"
+                  />
+                </div>
+                <div class="portfolio__back">
+                  <h3 class="portfolio__subtitle">
+                    Массажный салон на Пхукете
+                  </h3>
+                  <p class="portfolio__task">
+                    <strong>Задача:</strong> <br />Создать сайт массажного
+                    салона на Пхукете для привлечения туристов и жителей острова
+                  </p>
+                  <div class="portfolio__decision">
+                    <strong>Решение:</strong> <br />
+                  </div>
+                  <ul class="portfolio__task-list">
+                    <li class="portfolio__task-item">
+                      Дизайн с мягкими цветами и ассоциацией с релаксом;
+                    </li>
+                    <li class="portfolio__task-item">Каталог услуг;</li>
+                    <li class="portfolio__task-item">
+                      Интерактивные карты с адресами и маршрутами до салонов;
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <a
+                class="form__btn btn__link"
+                href="https://www.kimsmassagespa.com/"
+                target="_blank"
+                >Перейти на сайт</a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="faq">
+        <div class="container">
+          <div class="faq__wrapper">
+            <h2 class="faq__title">Вопросы о веб разработке</h2>
+            <ul class="faq__accordeon">
+              <li class="faq__accordeon-item">
+                <div class="faq__accordeon-header">
+                  <h3 class="faq__accordeon-subtitle">
+                    В чём отличие сайта на конструкторе от сайта на HTML/CSS/JS?
+                  </h3>
+                  <span class="faq__accordeon-icon"></span>
+                </div>
+                <div class="faq__accordeon-content">
+                  <h3 class="faq__subtitle">Минусы сайтов-конструкторов:</h3>
+                  <ul class="faq__list">
+                    <li class="faq__item">
+                      Арендованная площадка – вы не владеете сайтом полностью.
+                      Фактически вы платите за аренду, и если перестанете
+                      платить, сайт просто исчезнет;
+                    </li>
+                    <li class="faq__item">
+                      Реклама и ограничения – на бесплатных тарифах часто
+                      показывается реклама сервиса, убрать её можно только за
+                      доплату;
+                    </li>
+                    <li class="faq__item">
+                      Плохая скорость загрузки – из-за лишнего кода и
+                      ограниченных серверных ресурсов сайты грузятся медленнее,
+                      что плохо влияет на SEO и удобство;
+                    </li>
+                    <li class="faq__item">
+                      Проблемы с SEO – поисковые системы хуже индексируют
+                      сайты-конструкторы, поэтому продвигать их сложнее и
+                      дороже;
+                    </li>
+                    <li class="faq__item">
+                      Нет гибкости – интеграции, нестандартные решения и
+                      доработки практически невозможны.
+                    </li>
+                  </ul>
+                  <h3 class="faq__subtitle">Плюсы сайтов на HTML/CSS/JS:</h3>
+                  <ul class="faq__list">
+                    <li class="faq__item">
+                      Полное владение сайтом – вы получаете сайт, который
+                      работает на вашем хостинге, без зависимости от стороннего
+                      сервиса;
+                    </li>
+                    <li class="faq__item">
+                      Высокая скорость загрузки – чистый и оптимизированный код,
+                      быстрый отклик страниц;
+                    </li>
+                    <li class="faq__item">
+                      Уникальный дизайн – сайт создаётся под ваш бизнес, а не в
+                      рамках чужого шаблона;
+                    </li>
+                    <li class="faq__item">
+                      Гибкость и масштабируемость – можно добавить любой
+                      функционал;
+                    </li>
+                    <li class="faq__item">
+                      SEO-оптимизация – сайт изначально строится с учётом
+                      продвижения в поисковиках;
+                    </li>
+                    <li class="faq__item">
+                      Надёжность и безопасность – код под вашим контролем,
+                      никакой сторонней рекламы или скрытых скриптов.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="faq__accordeon-item">
+                <div class="faq__accordeon-header">
+                  <h3 class="faq__accordeon-subtitle">
+                    Зачем мне сайт, если есть соцсети?
+                  </h3>
+                  <span class="faq__accordeon-icon"></span>
+                </div>
+                <div class="faq__accordeon-content">
+                  <h3 class="faq__subtitle">Минусы соцсетей:</h3>
+                  <ul class="faq__list">
+                    <li class="faq__item">
+                      Нет полной собственности – страница принадлежит платформе,
+                      а не вам. Аккаунт могут заблокировать без предупреждения;
+                    </li>
+                    <li class="faq__item">
+                      Алгоритмы против вас – посты видят только 5–10%
+                      подписчиков, остальные просто не получают ваш контент;
+                    </li>
+                    <li class="faq__item">
+                      Нет гибкости – ограниченные возможности для оформления,
+                      нельзя сделать сложные функции: блог, каталог, форму
+                      заказа;
+                    </li>
+                    <li class="faq__item">
+                      Ограниченное доверие – у клиента соцсеть часто
+                      воспринимается как дополнительный канал, а не как
+                      серьёзная компания;
+                    </li>
+                    <li class="faq__item">
+                      Проблемы с поиском – соцсети плохо индексируются в Google,
+                      вас труднее найти новым клиентам.
+                    </li>
+                  </ul>
+                  <h3 class="faq__subtitle">Плюсы сайта:</h3>
+                  <ul class="faq__list">
+                    <li class="faq__item">
+                      Полный контроль – сайт принадлежит вам, его нельзя удалить
+                      или заблокировать сторонними сервисами;
+                    </li>
+                    <li class="faq__item">
+                      Центр коммуникации – соцсети, реклама и офлайн-активности
+                      ведут трафик именно на сайт;
+                    </li>
+                    <li class="faq__item">
+                      Удобство для клиента – в одном месте можно разместить
+                      каталог, цены, формы заказа, отзывы;
+                    </li>
+                    <li class="faq__item">
+                      SEO-продвижение – сайт индексируется в поисковых системах,
+                      его находят новые клиенты по запросам;
+                    </li>
+                    <li class="faq__item">
+                      Повышение доверия – наличие сайта подтверждает серьёзность
+                      и надёжность компании.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="faq__accordeon-item">
+                <div class="faq__accordeon-header">
+                  <h3 class="faq__accordeon-subtitle">
+                    На что влияет скорость загрузки сайта?
+                  </h3>
+                  <span class="faq__accordeon-icon"></span>
+                </div>
+                <div class="faq__accordeon-content">
+                  <ul class="faq__list">
+                    <li class="faq__item">
+                      Если сайт загружается дольше 3 секунд, более 50%
+                      пользователей просто закрывают вкладку и уходят к
+                      конкурентам;
+                    </li>
+                    <li class="faq__item">
+                      Падение позиций в Google — поисковики любят быстрые сайты
+                      и дают им приоритет;
+                    </li>
+                    <li class="faq__item">
+                      Плохой пользовательский опыт — сайт кажется «устаревшим» и
+                      «ненадёжным»;
+                    </li>
+                    <li class="faq__item">
+                      Снижение конверсии — даже если клиент дождался загрузки,
+                      доверия к сайту меньше.
+                    </li>
+                  </ul>
+                  <h3 class="faq__accordeon-subtitle">
+                    Что мы делаем для быстрой загрузки:
+                  </h3>
+                  <ul class="faq__list">
+                    <li class="faq__item">
+                      Используем чистый код без лишних библиотек;
+                    </li>
+                    <li class="faq__item">Оптимизируем изображения;</li>
+                    <li class="faq__item">
+                      Настраиваем кэширование и сжатие файлов;
+                    </li>
+                    <li class="faq__item">Выбираем надёжный хостинг.</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="faq__accordeon-item">
+                <div class="faq__accordeon-header">
+                  <h3 class="faq__accordeon-subtitle">
+                    Как убедиться в том, что веб-сайт работает правильно?
+                  </h3>
+                  <span class="faq__accordeon-icon"></span>
+                </div>
+                <div class="faq__accordeon-content">
+                  <ul class="faq__list">
+                    <li class="faq__item">
+                      Проверка скорости загрузки<br />Зайдите на сервис Google
+                      PageSpeed Insights, вставьте адрес сайта и получите оценку
+                      скорости + рекомендации. Хороший сайт должен загружаться
+                      быстро и на телефоне, и на компьютере;
+                    </li>
+                    <li class="faq__item">
+                      Адаптивность (удобство на телефонах)<br />
+                      Откройте сайт на смартфоне. Текст должен быть читаемым,
+                      кнопки — удобными для нажатия, изображения — не
+                      «съезжать».
+                    </li>
+                    <li class="faq__item">
+                      Кроссбраузерность <br />
+                      Попробуйте открыть сайт в разных браузерах: Chrome,
+                      Safari, Firefox. Качественная верстка будет одинаково
+                      корректно отображаться везде;
+                    </li>
+                    <li class="faq__item">
+                      Валидация кода<br />
+                      Есть бесплатный сервис W3C Validator, где можно вставить
+                      ссылку и проверить, нет ли ошибок в структуре кода.
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="faq__accordeon-item">
+                <div class="faq__accordeon-header">
+                  <h3 class="faq__accordeon-subtitle">
+                    Что значит «сайт под санкциями» и как этого избежать?
+                  </h3>
+                  <span class="faq__accordeon-icon"></span>
+                </div>
+                <div class="faq__accordeon-content">
+                  <p class="faq__accordeon-p">
+                    Попасть «под санкции» — это значит, что поисковые системы
+                    (Google, Bing и др.) блокируют или ограничивают ваш сайт. В
+                    результате он теряет позиции в поиске, а иногда вовсе
+                    перестаёт отображаться в результатах.
+                  </p>
+                  <h3 class="faq__subtitle">Причины могут быть разные:</h3>
+                  <ul class="faq__list">
+                    <li class="faq__item">
+                      Пиратский или ворованный контент — тексты или картинки
+                      скопированы с чужих сайтов;
+                    </li>
+                    <li class="faq__item">
+                      Вредоносный код / вирусы — если сайт заражён и через него
+                      распространяется вредоносный софт;
+                    </li>
+                    <li class="faq__item">
+                      Спамные SEO-методы — переоптимизация ключевых слов,
+                      скрытые тексты или ссылки;
+                    </li>
+                    <li class="faq__item">
+                      Нарушение авторских прав — использование чужих фотографий,
+                      логотипов или видео;
+                    </li>
+                    <li class="faq__item">
+                      Сервер и домен в «чёрных списках» — если хостинг
+                      ненадёжный или домен был ранее использован под спам.
+                    </li>
+                  </ul>
+                  <h3 class="faq__subtitle">
+                    Что мы делаем, чтобы сайт был в безопасности:
+                  </h3>
+                  <ul class="faq__list">
+                    <li class="faq__subtitle">
+                      Используем только чистый валидный код;
+                    </li>
+                    <li class="faq__subtitle">
+                      Настраиваем HTTPS-сертификат для защиты данных;
+                    </li>
+                    <li class="faq__subtitle">
+                      Работаем только с надёжными хостингами;
+                    </li>
+                    <li class="faq__subtitle">Загружаем уникальный контент.</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="faq__accordeon-item">
+                <div class="faq__accordeon-header">
+                  <h3 class="faq__accordeon-subtitle">
+                    Почему стоит доверить сайт нам?
+                  </h3>
+                  <span class="faq__accordeon-icon"></span>
+                </div>
+                <div class="faq__accordeon-content">
+                  <ul class="faq__list">
+                    <li class="faq__item">Гибкий дизайн под ваши задачи;</li>
+                    <li>Современные анимации и эффекты;</li>
+                    <li class="faq__item">Продающий подход;</li>
+                    <li class="faq__item">
+                      Tестовая настройка Google Ads на небольшой бюджет
+                      бесплатно;
+                    </li>
+                    <li class="faq__item">
+                      Кроссбраузерность, адаптивность, высокая скорость
+                      загрузки, валидация по стандартам W3C;
+                    </li>
+                    <li class="faq__item">
+                      Уникальный код, SSL-сертификат, настройка хостинга и
+                      домена, защита от банов и санкций;
+                    </li>
+                    <li class="faq__item">Прозрачные условия оплаты;</li>
+                    <li class="faq__item">Поддержка после сдачи проекта.</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <h2 class="about__title">Кто мы?</h2>
+          <div class="about__wrapper">
+            <div class="about__left">
+              <div class="about__img">
+                <img
+                  class="about__photo"
+                  src="./src/img/20250404_165043.webp"
+                  alt="photo"
+                />
+              </div>
+
+              <div class="about__box">
+                <div class="about__box-inner">
+                  <h3 class="about__name">Елена Берзина</h3>
+                  <h4 class="about__position">
+                    Веб разработчик, основатель SiteWithSoul Studio
+                  </h4>
+                </div>
+                <img
+                  class="about__social"
+                  src="../src/img/whatsapp3.png"
+                  alt="whatsapp"
+                  width="40"
+                  height="40"
+                />
+              </div>
+
+              <hr class="hr" />
+            </div>
+            <div class="about__right">
+              <p class="about__content">
+                <span>SiteWithSoul Studio</span> — маленькая, но очень
+                увлечённая команда, которая превращает идеи в работающие сайты.
+                Мы делаем сайты простыми, удобными и такими, чтобы они приносили
+                результат. В SiteWithSoul Studio уверены: у каждого бизнеса есть
+                душа, а сайт — это способ показать её миру. Поэтому мы не
+                штампуем проекты, а бережно собираем каждый сайт под задачи
+                клиента. Мы работаем полностью онлайн, поэтому можем быть рядом
+                с вами, где бы вы ни находились — от Украины до США и Европы.
+                Работаем прозрачно, с душой и всегда остаёмся на связи.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="why">
+        <div class="container">
+          <h2 class="why__subtitle">Почему стоит выбрать нас ?</h2>
+          <ul class="why__list">
+            <li
+              class="why__item"
+              data-number="1"
+              data-aos="fade-up"
+              data-aos-duration="4000"
+            >
+              <h4 class="why__title">Прозрачные условия</h4>
+              <p class="why__content">
+                Никаких скрытых платежей: фиксированная предоплата 50% и
+                финальный расчёт после сдачи проекта;
+              </p>
+            </li>
+            <li
+              class="why__item"
+              data-number="2"
+              data-aos="fade-up"
+              data-aos-duration="4000"
+            >
+              <h4 class="why__title">Готовые макеты под разные ниши</h4>
+              <p class="why__content">
+                Мы предлагаем дизайн-решения для разных сфер бизнеса, а вы
+                экономите время и бюджет, получая современный дизайн, на основе
+                опыта реальных проектов;
+              </p>
+            </li>
+            <li
+              class="why__item"
+              data-number="3"
+              data-aos="fade-up"
+              data-aos-duration="4000"
+            >
+              <h4 class="why__title">Поддержка и обучение</h4>
+              <p class="why__content">
+                После запуска сайта остаёмся на связи, помогаем освоить админку
+                и при необходимости вносим правки;
+              </p>
+            </li>
+            <li
+              class="why__item"
+              data-number="4"
+              data-aos="fade-up"
+              data-aos-duration="4000"
+            >
+              <h4 class="why__title">Бесплатный бонус</h4>
+              <p class="why__content">
+                Настройка тестовой Google-рекламы при желании клиента — без
+                доплаты, чтобы вы сразу получили первых посетителей.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="contacts" id="contacts">
+        <div class="container">
+          <h2 class="contacts__title">Контакты</h2>
+          <p class="contacts__subtitle">
+            Ваш сайт начинается с простого сообщения
+          </p>
+          <div class="contacts__wrapper">
+            <div class="contacts__left">
+              <h4 class="contacts__txt">
+                Свяжитесь с нами удобным для вас способом
+              </h4>
+              <div class="contacts__phone-box">
+                <img
+                  class="contacts__phone-icon"
+                  src="./src/img/telephone.png"
+                  alt="telephone"
+                  width="30"
+                />
+                <a class="contacts__number" href="tel:+38990000000"
+                  >+38 (099) 000-00-00</a
+                >
+              </div>
+              <div class="contacts__socials-box">
+                <a
+                  href="https://t.me/#"
+                  target="_blank"
+                  class="contacts__social-link"
+                ></a>
+                <img
+                  src="./src/img/tg.png"
+                  alt="telegram"
+                  class="contacts__socials-img"
+                  width="30"
+                />
+                <span>Telegram</span>
+              </div>
+
+              <div class="contacts__socials-box">
+                <a
+                  href="https://wa.me/380XXXXXXXXX"
+                  target="_blank"
+                  class="contacts__social-link"
+                >
+                </a>
+                <img
+                  src="./src/img/whatsapp.png"
+                  alt="telegram"
+                  class="contacts__socials-img"
+                  width="30"
+                />
+                <span>WhatsApp</span>
+              </div>
+              <div class="contacts__socials-box">
+                <a
+                  href="viber://chat?number=%2B380XXXXXXXXX"
+                  target="_blank"
+                  class="contacts__social-link"
+                ></a>
+                <img
+                  src="./src/img/viber1.png"
+                  alt="viber"
+                  class="contacts__socials-img"
+                  width="30"
+                />
+                <span>Viber</span>
+              </div>
+              <div class="contacts__socials-box">
+                <a
+                  href="mailto:sitewithsoul@gmail.com"
+                  target="_blank"
+                  class="contacts__social-link"
+                ></a>
+                <img
+                  src="./src/img/email.png"
+                  alt="email"
+                  class="contacts__socials-img"
+                  width="30"
+                />
+                <span>sitewithsoul@gmail.com</span>
+              </div>
+            </div>
+            <div class="contacts__right">
+              <h2 class="modal__title modal__title-order">Отправьте заявку</h2>
+              <form action="#" class="modal__form" method="post">
+                <div class="form__field">
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="name"
+                    placeholder="Ваше имя"
+                  />
+                </div>
+
+                <div class="form__field">
+                  <input
+                    type="email"
+                    class="form__input"
+                    id="email"
+                    placeholder="Оставьте свой email"
+                  />
+                </div>
+                <div class="form__field">
+                  <input
+                    type="text"
+                    class="form__input"
+                    id="phone"
+                    placeholder="Оставьте свой номер телефона"
+                  />
+                </div>
+                <div class="form__field form__field-decor">
+                  <select
+                    id="website"
+                    name="website"
+                    class="form__input form__input-decor"
+                  >
+                    <option value="">--Выберите нужный сайт--</option>
+                    <option value="landing">Лендинг</option>
+                    <option value="visitka">Сайт-визитка</option>
+                    <option value="pages">Многостраничник</option>
+                  </select>
+                </div>
+                <div class="form__field">
+                  <textarea
+                    class="form__message"
+                    id="message"
+                    name="message"
+                    rows="6"
+                    placeholder="Расскажите коротко о вашем проекте, и мы свяжемся с вами в ближайшее время"
+                  ></textarea>
+                </div>
+                <button type="submit" class="form__btn">Отправить</button>
+              </form>
+            </div>
+          </div>
+          <p class="contacts__slogan">
+            ○ Работаем онлайн с клиентами по всему миру ○
+          </p>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container container__footer">
+          <div class="footer__left">
+            <a href="#" class="logo">SiteWithSoul</a>
+            <div class="footer__socials-box">
+              <a class="footer__socials-link" href="#">
+                <img
+                  src="./src/img/instagram.png"
+                  alt="instagram"
+                  class="hero__socials-img"
+                  width="30"
+                />
+              </a>
+              <a class="footer__socials-link" href="#">
+                <img
+                  src="./src/img/linkedin.png"
+                  alt="linkedin"
+                  class="hero__socials-img"
+                  width="30"
+                />
+              </a>
+              <a class="footer__socials-link" href="#">
+                <img
+                  src="./src/img/behance.png"
+                  alt="behance"
+                  class="hero__socials-img"
+                  width="30"
+                />
+              </a>
+              <a class="footer__socials-link" href="#">
+                <img
+                  src="./src/img/telegram.png"
+                  alt="telegram"
+                  class="hero__socials-img"
+                  width="30"
+                />
+              </a>
+              <a class="footer__socials-link" href="#">
+                <img
+                  src="./src/img/whatsapp3.png"
+                  alt="whatsapp"
+                  class="hero__socials-img"
+                  width="30"
+                />
+              </a>
+              <a class="footer__socials-link" href="#">
+                <img
+                  src="./src/img/viber.png"
+                  alt="viber"
+                  class="hero__socials-img"
+                  width="35"
+                />
+              </a>
+            </div>
+            <div class="footer__policy">
+              Нажимая кнопку отправки формы на сайте, вы соглашаетесь с
+              условиями
+              <a class="footer__doc-hover" href="/oferta.html"
+                >договора оферты</a
+              >
+              и
+              <a class="footer__doc-hover" href="/policy.html">
+                политики конфиденциальности</a
+              >
+            </div>
+          </div>
+          <div class="footer__offers">
+            <h3 class="footer__offers-title">Что мы создаём</h3>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#services" class="footer__link">Лендинг</a>
+              </li>
+              <li class="footer__item">
+                <a href="#services" class="footer__link"
+                  >Многостраничный сайт</a
+                >
+              </li>
+              <li class="footer__item">
+                <a href="#services" class="footer__link">Сайт-визитка</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__right">
+            <div class="contacts__phone-box phone-box__footer">
+              <img
+                class="contacts__phone-footer"
+                src="./src/img/telephone.png"
+                alt="telephone"
+                width="30"
+              />
+              <a class="contacts__number-footer" href="tel:+38990000000"
+                >+38 (099) 000-00-00</a
+              >
+            </div>
+            <div class="contacts__email-footer">
+              <a
+                href="mailto:sitewithsoul@gmail.com"
+                target="_blank"
+                class="contacts__social-link"
+              ></a>
+              <img
+                src="./src/img/communication.png"
+                alt="email"
+                class="contacts__socials-footer"
+                width="50"
+              />
+              <span>sitewithsoul@gmail.com</span>
+            </div>
+
+            <div class="contacts__socials-box socials-box__brif">
+              <img
+                src="./src/img/text.png"
+                alt="brif"
+                class="contacts__socials-footer"
+                width="40"
+              />
+              <a
+                href="brif.docx"
+                download="Brif-site"
+                class="contacts__social-link socials-box__link"
+                >скачать бриф RU(Doc)</a
+              >
+            </div>
+            <div class="contacts__socials-box socials-box__brif">
+              <img
+                src="./src/img/text.png"
+                alt="brif"
+                class="contacts__socials-footer"
+                width="40"
+              />
+              <a
+                href="brif-UA.docx"
+                download="Brif-site"
+                class="contacts__social-link socials-box__link"
+                >завантажити бриф UA(Doc)</a
+              >
+            </div>
+            <div class="contacts__socials-box socials-box__brif">
+              <img
+                src="./src/img/text.png"
+                alt="brif"
+                class="contacts__socials-footer"
+                width="40"
+              />
+              <a
+                href="brif-EN.docx"
+                download="Brif-site"
+                class="contacts__social-link socials-box__link"
+                >download brief EN(Doc)</a
+              >
+            </div>
+          </div>
+        </div>
+        <p class="footer__txt">© 2025 SiteWithSoul Studio</p>
+      </footer>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

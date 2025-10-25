@@ -1,0 +1,120 @@
+.portfolio {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  @media (max-width: 576px) {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+.portfolio__list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  @media (max-width: 1440px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 1074px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
+.portfolio__wrap {
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  padding-bottom: 20px;
+}
+.portfolio__card {
+  max-width: 450px;
+  aspect-ratio: 3 / 2;
+  position: relative;
+  perspective: 1000px;
+  margin-bottom: 15px;
+  @media (max-width: 1074px) {
+    max-width: 100%;
+  }
+}
+.portfolio__front,
+.portfolio__back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  transition: 1s;
+  backface-visibility: hidden;
+}
+.portfolio__front {
+  transform: rotateY(0deg);
+}
+.portfolio__back {
+  transform: rotateY(180deg);
+  background-color: rgba(131, 11, 11, 0.2);
+  padding: 15px;
+  background: linear-gradient(90deg, #e2e2e2, #a8a8a8);
+}
+
+.portfolio__card:hover .portfolio__front {
+  transform: rotateY(180deg);
+}
+.portfolio__card:hover .portfolio__back {
+  transform: rotateY(360deg);
+}
+.portfolio__card.is-flipped .portfolio__front {
+  transform: rotateY(180deg);
+}
+
+.portfolio__card.is-flipped .portfolio__back {
+  transform: rotateY(360deg);
+}
+.portfolio__title {
+  @include title__black;
+  font-size: clamp(rem(20), 5vw, rem(35));
+}
+.portfolio__title::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 3px;
+  background-color: orange;
+  margin: 10px 0 10px 0;
+}
+.portfolio__subt {
+  @include subtitle__grey;
+  font-size: clamp(rem(15), 5vw, rem(18));
+}
+.portfolio__img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+.btn__link {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 15px;
+  margin-right: 15px;
+  @media (max-width: 576px) {
+    font-size: rem(14);
+  }
+}
+.portfolio__task {
+  font-size: rem(12);
+  line-height: rem(13);
+}
+.portfolio__subtitle {
+  font-size: rem(12);
+  @media (max-width: 576px) {
+    margin: 0;
+  }
+}
+.portfolio__decision {
+  font-size: rem(12);
+}
+.portfolio__task-item {
+  font-size: rem(12);
+  line-height: rem(12);
+}

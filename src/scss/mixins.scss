@@ -1,0 +1,33 @@
+@import "./pixtorem.scss";
+
+@mixin title__white {
+  text-align: center;
+  display: block;
+  margin: 0 auto 20px;
+  font-size: rem(35);
+  position: relative;
+  line-height: rem(35);
+}
+@mixin subtitle__white {
+  max-width: 635px;
+  text-align: center;
+  margin: 0 auto 30px;
+  display: block;
+  font-size: rem(18);
+  line-height: rem(25);
+}
+@mixin title__black {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: rem(35);
+  position: relative;
+}
+@mixin subtitle__grey {
+  text-align: center;
+  color: rgb(130, 130, 130);
+  font-size: rem(18);
+  max-width: 635px;
+  line-height: rem(25);
+  display: block;
+  margin: 40px auto 50px;
+}

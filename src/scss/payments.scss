@@ -1,0 +1,147 @@
+@import "./mixins";
+
+.payments {
+  padding-bottom: 100px;
+  padding-top: 100px;
+  background-color: #1a1c1e;
+  color: #f5f7fa;
+  overflow: hidden;
+  @media (max-width: 576px) {
+    padding-bottom: 50px;
+    padding-top: 50px;
+  }
+}
+
+.payments__title {
+  @include title__white;
+  @media (max-width: 1200px) {
+    font-size: clamp(rem(24), 5vw, rem(35));
+  }
+}
+.payments__text {
+  @include subtitle__white;
+  margin: 40px auto 50px;
+  @media (max-width: 1200px) {
+    font-size: clamp(rem(15), 5vw, rem(18));
+    line-height: clamp(rem(20), 5vw, rem(25));
+  }
+}
+.payments__title::after {
+  content: "";
+  position: absolute;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 3px;
+  background-color: orange;
+  margin: 10px 0 10px 0;
+}
+.payments__wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  @media (max-width: 1200px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.payments__list-group {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+.payments__local-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.payments__inner {
+  display: flex;
+  flex-direction: column;
+  //   flex: 1;
+}
+.list-group-item {
+  border: 1px solid rgba(237, 235, 235, 0.3);
+  cursor: pointer;
+  padding: 12px;
+  transition: all 0.2s ease;
+  @media (max-width: 1200px) {
+    font-size: clamp(rem(13), 4vw, rem(18));
+  }
+}
+.list-group-item.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+.hidden {
+  display: none;
+}
+
+.payments__img {
+  //   flex: 1;
+}
+.payments__photo {
+  width: 100%;
+  max-width: 600px;
+  min-width: 200px;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+.payments__item {
+  margin-bottom: 25px;
+  position: relative;
+  max-width: 580px;
+  line-height: 25px;
+  font-size: clamp(rem(15), 5vw, rem(18));
+  line-height: clamp(rem(20), 5vw, rem(25));
+  @media (max-width: 1200px) {
+    padding-left: 35px;
+  }
+}
+.payments__item::before {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 0;
+  left: -35px;
+  background-image: url("../img/pin.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @media (max-width: 1200px) {
+    left: 0;
+  }
+}
+.payments__description {
+  text-align: center;
+  max-width: 580px;
+  font-size: clamp(rem(15), 5vw, rem(18));
+  line-height: clamp(rem(20), 5vw, rem(25));
+}
+.payments__description span {
+  font-size: 22px;
+  color: red;
+  line-height: 35px;
+  font-size: clamp(rem(15), 5vw, rem(18));
+}
+.payments__subtitle {
+  font-weight: 600;
+  margin: 25px 0 25px 0;
+  font-size: clamp(rem(15), 5vw, rem(18));
+}
+.payments__subtitle span {
+  font-style: italic;
+}
+.payments__for-local {
+  text-align: center;
+  max-width: 580px;
+  margin-bottom: 35px;
+  line-height: 25px;
+  font-size: clamp(rem(15), 5vw, rem(18));
+  line-height: clamp(rem(20), 5vw, rem(25));
+}
