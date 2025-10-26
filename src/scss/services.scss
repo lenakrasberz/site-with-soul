@@ -85,7 +85,6 @@
 .services__list {
   list-style: none;
   padding-left: 0;
-  // display: flex;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
   justify-content: center;
@@ -93,7 +92,6 @@
   gap: 25px;
 }
 .services__item {
-  // flex-basis: 400px;
   min-height: 350px;
   background-color: #f5f7fa;
   color: #121212;
@@ -156,24 +154,34 @@
   height: 30px;
 }
 .sidebar {
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
-  max-width: 400px;
+  width: 400px;
+  max-width: 90%;
   height: 100%;
   background-image: linear-gradient(to right, #1a1b1c, #36393b);
   color: #fff;
-  transition: transform 0.3s ease;
+  transition: transform 0.3s ease-in-out;
   z-index: 1000;
+  overflow-y: auto;
   transform: translateX(100%);
+  @media (max-width: 1200px) {
+    width: 100%;
+    max-width: 100%;
+    left: 0;
+  }
 }
-#landing:target {
+.sidebar.active {
   transform: translateX(0);
 }
-
-#landing:target ~ .container__services {
+.container__services.sidebar-open {
   transform: rotateY(25deg);
+  transition: transform 0.5s ease-in-out;
+  height: 100vh;
+  overflow: hidden;
 }
+
 // Sidebar
 
 .close__btn {
@@ -191,14 +199,22 @@
 .landing__title {
   margin: 65px 0 35px;
   text-align: center;
+  @media (max-width: 1200px) {
+    margin-bottom: 60px;
+    padding-top: 50px;
+  }
 }
 .landing_list {
   margin-bottom: 30px;
   padding-left: 30px;
   list-style: none;
+  @media (max-width: 1200px) {
+    max-width: 600px;
+    margin: 0 auto;
+  }
 }
 .landing_item {
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   position: relative;
   padding-left: 25px;
   @media (max-width: 480px) {
@@ -247,6 +263,10 @@
     /* bottom-right 2 */ 0 100%
   );
   transition: color 250ms;
+  @media (max-width: 1200px) {
+    margin: 0 auto;
+    display: block;
+  }
 }
 
 .form__btn-order::after,
@@ -320,12 +340,14 @@
 
 .modal-order {
   max-width: 700px;
-  position: absolute;
+  position: fixed;
   inset: 0;
   margin: 0 auto;
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s ease;
+  z-index: 2000;
+  transition: all 0.3 ease;
 }
 .modal-order.active {
   opacity: 1;
@@ -371,4 +393,12 @@
 }
 .hidden {
   display: none !important;
+}
+.form__input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+.form__message:focus {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
 }

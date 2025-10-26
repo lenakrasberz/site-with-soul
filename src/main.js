@@ -205,35 +205,53 @@ burgerLinks.forEach((link) => {
 
 //Adaptive servises >1200
 
+const sidebar2 = document.getElementById("landing");
+const serviceLinks = document.querySelectorAll(".services__link");
 const serviceTitle = document.querySelector(".services__title");
 const serviceContent = document.querySelector(".services__content");
 const serviceList = document.querySelector(".services__list");
-const serviceLinks = document.querySelectorAll(".services__link");
-
+const containerServices = document.querySelector(".container__services");
 const closeBtns = [
   document.querySelector(".close__btn"),
-  document.querySelector(".modal__close"),
-  document.querySelector(".form__btn"),
   document.querySelector(".form__btn-order"),
-].filter(Boolean);
+];
+// функция открытия
+function openSidebar() {
+  sidebar2.classList.add("active");
+  containerServices.classList.add("sidebar-open");
 
-// функция скрытия
-const hideServices = () => {
   if (window.innerWidth < 1200) {
-    serviceTitle.style.display = "none";
-    serviceContent.style.display = "none";
-    serviceList.style.display = "none";
+    // небольшая задержка, чтобы анимация не дёргалась
+    setTimeout(() => {
+      serviceTitle.style.opacity = "0";
+      serviceContent.style.opacity = "0";
+      serviceList.style.opacity = "0";
+    }, 200);
   }
-};
+}
 
-// функция показа
-const showServices = () => {
-  serviceTitle.style.display = "";
-  serviceContent.style.display = "";
-  serviceList.style.display = "";
-};
+// функция закрытия
+function closeSidebar() {
+  sidebar2.classList.remove("active");
+  containerServices.classList.remove("sidebar-open");
 
-// скрытие при клике на любую ссылку
-serviceLinks.forEach((link) => link.addEventListener("click", hideServices));
+  // плавное возвращение
+  if (window.innerWidth < 1200) {
+    setTimeout(() => {
+      serviceTitle.style.opacity = "1";
+      serviceContent.style.opacity = "1";
+      serviceList.style.opacity = "1";
+    }, 300);
+  }
+}
 
-closeBtns.forEach((btn) => btn.addEventListener("click", showServices));
+// открытие по клику
+serviceLinks.forEach((link) => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault(); // чтобы страница не прыгала
+    openSidebar();
+  });
+});
+
+// закрытие по кнопке
+closeBtns.forEach((btn) => btn.addEventListener("click", closeSidebar));

@@ -330,6 +330,10 @@
     border: 1px solid rgba(255, 255, 255, 0.7);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
   }
+  .form__message:focus {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+  }
   .modal__title {
     color: white;
     margin-bottom: 118px;
