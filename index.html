@@ -5,8 +5,8 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SiteWithSoul Agency</title>
-    <script type="module" crossorigin src="/site-with-soul/assets/index-6girs7g_.js"></script>
-    <link rel="stylesheet" crossorigin href="/site-with-soul/assets/index-_-40ZAs9.css">
+    <script type="module" crossorigin src="/site-with-soul/assets/index-Zv2lkKB1.js"></script>
+    <link rel="stylesheet" crossorigin href="/site-with-soul/assets/index-DciEKOvf.css">
   </head>
   <body>
     <header class="hero">
@@ -162,14 +162,6 @@
               width="30"
             />
           </a>
-          <!-- <a href="#">
-            <img
-              src="./src/img/behance.svg"
-              alt="telegram"
-              class="hero__socials-img"
-              width="30"
-            />
-          </a> -->
         </div>
         <h1 class="hero__title">Сайт под ключ без лишних затрат</h1>
         <p class="hero__subtitle">Создаем сайты, которые приносят клиентов</p>
@@ -332,6 +324,19 @@
           <button type="submit" class="form__btn-order" id="open__modal-order">
             ЗАКАЗАТЬ
           </button>
+        </div>
+        <div class="servises__box">
+          <picture class="servises__bg">
+            <source
+              media="(max-width: 640px)"
+              srcset="/site-with-soul/assets/ingniostudio-640-B4jhcuZs.jpg"
+            />
+            <source
+              media="(max-width: 1024px)"
+              srcset="/site-with-soul/assets/ingniostudio-1024-Bt3lRI6D.jpg"
+            />
+            <img src="/site-with-soul/assets/ingniostudio-BNKwmVMX.avif" alt="bg" />
+          </picture>
         </div>
         <div class="container container__services">
           <h2 class="services__title">Наши услуги</h2>
@@ -661,19 +666,27 @@
             предлагаем простые и понятные условия работы
           </p>
           <div class="payments__wrapper">
-            <div
-              class="payments__img"
-              data-aos="fade-right"
-              data-aos-offset="300"
-              data-aos-easing="ease-in-sine"
-            >
-              <img
-                class="payments__photo"
-                src="/site-with-soul/assets/payments-C-bAIfHX.avif"
-                alt="payments"
-                width="800"
-              />
+            <div class="payments__img-box">
+              <picture class="payments__img">
+                <source
+                  media="max-width: 640px"
+                  srcset="/site-with-soul/assets/payments-640-Bj62V-zm.avif"
+                />
+                <source
+                  media="max-width: 1024px"
+                  srcset="./src/img/payments-1024.avif.avif"
+                />
+                <img
+                  src="/site-with-soul/assets/payments-C-bAIfHX.avif"
+                  data-aos="fade-right"
+                  data-aos-offset="300"
+                  data-aos-easing="ease-in-sine"
+                  alt="payments"
+                  width="600"
+                />
+              </picture>
             </div>
+
             <div
               class="payments__inner"
               data-aos="fade-left"
@@ -1511,11 +1524,26 @@
           <div class="about__wrapper">
             <div class="about__left">
               <div class="about__img">
-                <img
+                <picture class="about__photo">
+                  <source
+                    media="(max-width: 640px)"
+                    srcset="/site-with-soul/assets/20250404_165043-700-J5UwJUbN.jpg"
+                  />
+                  <source
+                    media="(max-width: 1024px)"
+                    srcset="/site-with-soul/assets/20250404_165043-1024-DlncKobK.avif"
+                  />
+                  <img
+                    src="/site-with-soul/assets/20250404_165043-BH_WCqU1.webp"
+                    alt="photo"
+                    class="about__photo"
+                  />
+                </picture>
+                <!-- <img
                   class="about__photo"
-                  src="/site-with-soul/assets/20250404_165043-BH_WCqU1.webp"
+                  src="./src/img/20250404_165043.webp"
                   alt="photo"
-                />
+                /> -->
               </div>
 
               <div class="about__box">
